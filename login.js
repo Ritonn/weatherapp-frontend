@@ -2,7 +2,7 @@ document.querySelector('#register').addEventListener('click', function() {
     const name = document.querySelector('#registerName').value;
     const email = document.querySelector('#registerEmail').value;
     const password = document.querySelector('#registerPassword').value;
-	fetch('https://whatyearisit-backend-nine-ivory.vercel.app/signup', { 
+	fetch('https://whatyearisit-backend-nine-ivory.vercel.app/users/signup', { 
         method: 'POST',
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ 
@@ -23,7 +23,7 @@ document.querySelector('#connection').addEventListener('click', function() {
     const email = document.querySelector('#connectionEmail').value;
     const password = document.querySelector('#connectionPassword').value;
 
-	fetch('https://whatyearisit-backend-nine-ivory.vercel.app/signin', { 
+	fetch('https://whatyearisit-backend-nine-ivory.vercel.app/users/signin', { 
         method: 'POST',
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ 
