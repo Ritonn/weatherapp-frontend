@@ -42,7 +42,7 @@ document.querySelector('#addCity').addEventListener('click', function () {
 		});
 });
 
-fetch('https://weatherapp-backend-tawny-omega.vercel.app/weather/')
+fetch('https://weatherapp-backend-tawny-omega.vercel.app/weather')
 	.then(response => response.json())
 	.then(data => {
 		if (data.weather) {
