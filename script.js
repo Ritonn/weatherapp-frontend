@@ -1,4 +1,4 @@
-fetch('https://whatyearisit-backend-nine-ivory.vercel.app/weather')
+fetch('https://weatherapp-backend-tawny-omega.vercel.app/weather')
 	.then(response => response.json())
 	.then(data => {
 		if (data.weather) {
@@ -24,7 +24,7 @@ fetch('https://whatyearisit-backend-nine-ivory.vercel.app/weather')
 function updateDeleteCityEventListener() {
 	for (let i = 0; i < document.querySelectorAll('.deleteCity').length; i++) {
 		document.querySelectorAll('.deleteCity')[i].addEventListener('click', function () {
-			fetch(`https://whatyearisit-backend-nine-ivory.vercel.app/weather/${this.id}`, { method: 'DELETE' })
+			fetch(`https://weatherapp-backend-tawny-omega.vercel.app/weather/${this.id}`, { method: 'DELETE' })
 				.then(response => response.json())
 				.then(data => {
 					if (data.result) {
