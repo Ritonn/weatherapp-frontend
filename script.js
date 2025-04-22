@@ -15,7 +15,7 @@ function updateDeleteCityEventListener() {
 document.querySelector('#addCity').addEventListener('click', function () {
 	const cityName = document.querySelector('#cityNameInput').value;
 
-	fetch('https://whatyearisit-backend-nine-ivory.vercel.app/weather', {
+	fetch('https://weatherapp-backend-tawny-omega.vercel.app/weather', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ cityName }),
